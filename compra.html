@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Almacen de Computadoras-Compra</title>
+</head>
+
+<body>
+    <header class="container-menu">
+        <div class="container-wrapper">
+            <div class="wrapper">
+                <div><img id="logo" src="./images/COMPUCLON-IMAGOTIPO.png" alt=""></div>
+                <div class="menu-list">
+                    <ul class="list">
+                        <a class="enlace-menu" href="home.html">
+                            <li>Home</li>
+                        </a>
+                        <a class="enlace-menu" href="compra.html">
+                            <li>Compra</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="calcular" id="calculo-cantidad">
+            <label>Cantidad de Computadores Comprados: </label>
+            <input id="cantidad" type="text">
+            <button id="btn-calcular" onclick="calcular()">Calcular</button>
+        </div>
+        <div class="title" id="orden-compra" style="display: none;">
+            <h2>Orden De Compra</h2>
+            <div>
+                <img src="./images/COMPUCLON-IMAGOTIPO-2020-PhotoRoom.png" alt="" width="80px">
+            </div>
+            <div class="compra-container">
+                <div>
+                    <label>Valor de la Compra:</label>
+                    <input id="valor-compra" type="text" disabled>
+                </div>
+                <div>
+                    <label>Valor del Descuento:</label>
+                    <input id="valor-descuento" type="text" disabled>
+                </div>
+                <div>
+                    <label>Total:</label>
+                    <input id="total" type="text" disabled>
+                </div>
+            </div>
+            <div id="alert-error" class="container-alert" style="display: none;">
+                <p id="alert"></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+    <footer class="footer"> Derechos Reservados © 2021 Compuclon S.A.S Diseño y Desarrollo</footer>
+
+</body>
+
+</html>
